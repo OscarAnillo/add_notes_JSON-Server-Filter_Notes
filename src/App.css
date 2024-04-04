@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.App {
+  text-align: center;
+}
+.App .show {
+  background-color: transparent;
+  border: 1px solid rgb(235, 95, 118);
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 1em;
+  padding: 1em;
+}
+
+/* AddNotes */
+.add-notes-div form {
+  margin: 0 auto;
+  width: 90%;
+}
+.add-notes-div form input {
+  border: none;
+  border-bottom: 1px solid #333;
+  margin: .5em 0;
+  padding: .5em;
+  width: 100%;
+}
+.add-notes-div form input:nth-child(2) {
+  background-color: rgb(235, 95, 118);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  padding: .5em;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+/* Notes */
+.notes-div {
+  margin: 1em auto;
+  text-align: left;
+  width: 90%;
+}
+.notes-div div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: .7em 0;
+}
+.btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0 0.5em;
+  padding: .3em;
+}
+.delete {
+  border: 1px solid red;
+  border-radius: 5px;
+  color: red;
+}
+.edit {
+  border: 1px solid blue;
+  border-radius: 5px;
+  color: blue
+}
+.notes-div h1 {
+  text-align: center;
+}
+
+@media(min-width: 760px) {
+  .add-notes-div form {
+    max-width: 550px;
+  }
+  .notes-div {
+    width: 50%;
+  }
+} 
